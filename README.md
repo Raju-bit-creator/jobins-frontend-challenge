@@ -24,4 +24,7 @@ A modern React application built with TypeScript, Vite, and GSAP animations, fea
    cd jobins-frontend
    ```
 2. npm i
-3. npm run dev
+3. npm run dev: Start dev server.
+4. npm run build: Build for production.
+
+Note : This is successfully build project!!!
