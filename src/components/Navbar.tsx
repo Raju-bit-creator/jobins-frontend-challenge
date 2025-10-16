@@ -19,7 +19,7 @@ const Navbar = ({ isExpanded, toggleSidebar }: NavbarProps) => {
       <nav
         className={`fixed top-0 right-0 ${
           isExpanded ? "h-[62px]" : "h-[54px]"
-        } bg-[#f5f5f5] shadow flex items-center justify-between px-4 transition-all duration-300 ${
+        } bg-[#f5f5f5] shadow flex items-center z-10 justify-between px-4 transition-all duration-300 ${
           isExpanded ? "w-[calc(100%-15rem)]" : "w-[calc(100%-3rem)]"
         }`}
       >

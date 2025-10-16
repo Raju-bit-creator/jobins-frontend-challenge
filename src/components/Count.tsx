@@ -64,7 +64,7 @@ const Counts = () => {
   }, []);
 
   return (
-    <div className="p-3 mt-4 flex flex-col gap-6 overflow-x-hidden">
+    <section className="p-3 mt-4 flex flex-col gap-6 overflow-x-hidden">
       {/* Cards Grid */}
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-hidden"
@@ -162,7 +162,7 @@ const Counts = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,7 +1,6 @@
 // import React from "react";
 import Counts from "./Count";
 import Profile from "./Profile";
-import SearchFilterBar from "./SearchFilterBar";
 import Salestable from "./Table";
 
 interface GroundProps {
@@ -19,7 +18,6 @@ const Ground = ({ isExpanded }: GroundProps) => {
       <div className="space-y-6 px-3 sm:px-6 lg:px-8 pb-8">
         <Counts />
         <Profile />
-        <SearchFilterBar />
         <Salestable />
       </div>
     </div>
