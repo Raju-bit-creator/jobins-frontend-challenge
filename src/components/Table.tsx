@@ -182,7 +182,7 @@ const SalesTable = () => {
             <button
               onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
               disabled={currentPage === 1}
-              className="flex h-9 w-9 items-center justify-center rounded-md text-gray-600 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-9 w-9 items-center justify-center rounded-md text-gray-600 font-bold bg-gray-100 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
             >
               ‹
             </button>
@@ -191,10 +191,10 @@ const SalesTable = () => {
               <button
                 key={page}
                 onClick={() => setCurrentPage(page)}
-                className={`h-9 w-9 rounded-md text-sm font-medium transition-colors ${
+                className={`h-9 w-9 rounded-md  text-sm font-medium transition-colors ${
                   currentPage === page
                     ? "bg-blue-600 text-white hover:bg-blue-700"
-                    : "text-gray-600 hover:bg-gray-100"
+                    : "text-gray-600 bg-gray-100 hover:bg-gray-100"
                 }`}
               >
                 {page}
@@ -206,7 +206,7 @@ const SalesTable = () => {
                 setCurrentPage((prev) => Math.min(totalPages, prev + 1))
               }
               disabled={currentPage === totalPages}
-              className="flex h-9 w-9 items-center justify-center rounded-md text-gray-600 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-9 w-9 font-bold items-center justify-center rounded-md text-gray-600 bg-gray-100 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
             >
               ›
             </button>
